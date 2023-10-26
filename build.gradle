@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.lux.softlabs'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+//task wrapper(type: Wrapper) {
+//    description = 'Generates gradlew[.bat] scripts'
+//    gradleVersion = '4.6'
+//    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+//}
